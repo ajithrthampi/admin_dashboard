@@ -44,23 +44,13 @@ export function Notifications() {
                         <CardBody className="flex flex-col gap-4 p-4  ">
                             {alerts.map((color) => (
                                 <Alert
-                                    // key={color}
-                                    // open={showAlerts[color]}
-                                    // color={color}
-                                    // onClose={() => setShowAlerts((current) => ({ ...current, [color]: false }))}
-                                    className={` bg-[${color}] w-full bg-red-500`}
-                                // className={` bg-[]`}
-
-                                >
-                                        <p>
-                                            A simple {color} alert with an <a href="#">example link</a>. Give
-                                            it a click if you like.
-                                        </p>
+                                    className={` bg-[${color}] w-full bg-red-500`}>
+                                    <p>
+                                        A simple {color} alert with an <a href="#">example link</a>. Give
+                                        it a click if you like.
+                                    </p>
                                 </Alert>
                             ))}
-
-                           
-
                         </CardBody>
                     </Card>
                     <Card>
@@ -83,12 +73,7 @@ export function Notifications() {
                                     className={` bg-[${color}] bg-green-500`}
                                     icon={
                                         <InformationCircleIcon strokeWidth={2} className="h-6 w-6" />
-                                    }
-                                // onClose={() => setShowAlertsWithIcon((current) => ({
-                                //     ...current,
-                                //     [color]: false,
-                                // }))}
-                                >
+                                    }>
                                     A simple {color} alert with an <a href="#">example link</a>. Give
                                     it a click if you like.
                                 </Alert>

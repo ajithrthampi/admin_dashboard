@@ -12,8 +12,6 @@ import { useState } from "react";
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
 
-  console.log("kkkkkkkk", showSidebar);
-
   return (
     <>
       <NavbarContext.Provider value={{ showSidebar, setShowSidebar }}>

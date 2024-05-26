@@ -45,45 +45,6 @@ const Profile = () => {
         <Homepages>
             <div className=' w-full h-[100%] overflow-hidden overflow-y-scroll'>
                 <Header data={"Profile"} />
-
-                {/* <div className='mt-8'>
-                    <div className='relative'>
-                        <div className='w-100% h-[18rem] bg-[#575757] rounded-xl'></div>
-                        <div className=' md:p-4 p-3 '>
-
-                            <div className='bg-[#ffffff] w-[100%] h-full -mt-20 rounded-xl md:p-4 p-3'>
-                                <div className='flex md:flex-row flex-col justify-between md:items-center md:gap-0 gap-6'>
-                                    <div className='flex items-center gap-6'>
-                                        <img className='w-[75px] h-[75px] rounded-xl shadow-2xl' src="https://tse1.mm.bing.net/th?id=OIP.X42b4q5g88ldlViDnsLj9QHaEK&pid=Api&P=0&h=180" alt="" />
-                                        <div className='flex flex-col'>
-                                            <p className='font-Roboto text-xl'>Richard Davis</p>
-                                            <p className='text-sm'>CEO/ Co-Founder</p>
-                                        </div>
-                                    </div>
-
-                                    <div className='sm:w-[380px] h-10 bg-[#f4f5f7] rounded-lg flex '>
-                                        <div className='w-full borde flex justify-center items-center gap-2'>
-                                            <HiHome size={20} />
-                                            <p className='font-Roboto'>App</p>
-                                        </div>
-                                        <div className='w-full borde flex justify-center items-center gap-2'>
-                                            <BiSolidMessageMinus size={20}  />
-                                            <p className='font-Roboto'>Message</p>
-                                        </div>
-                                        <div className='w-full borde flex justify-center items-center gap-2'>
-                                            <IoSettingsSharp size={20}  />
-                                            <p className='font-Roboto'>Settings</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div> */}
-
                 <div className={`relative mt-8 h-72 w-full overflow-hidden rounded-xl bg-[url('../')  bg-cover	bg-center`}
                     style={{ backgroundImage: `url(${pattern})` }}
                 >
@@ -157,24 +118,6 @@ const Profile = () => {
                                                 ))}
                                             </div>
 
-                                            {/* <div class="inline-flex items-center">
-  <div class="relative inline-block h-4 w-8 cursor-pointer rounded-full">
-    <input
-      id="switch-component"
-      type="checkbox"
-      class="peer absolute h-4 w-8 cursor-pointer appearance-none rounded-full bg-blue-gray-100 transition-colors duration-300 checked:bg-pink-500 peer-checked:border-pink-500 peer-checked:before:bg-pink-500"
-    />
-    <label
-      for="switch-component"
-      class="before:content[''] absolute top-2/4 -left-1 h-5 w-5 -translate-y-2/4 cursor-pointer rounded-full border border-blue-gray-100 bg-white shadow-md transition-all duration-300 before:absolute before:top-2/4 before:left-2/4 before:block before:h-10 before:w-10 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity hover:before:opacity-10 peer-checked:translate-x-full peer-checked:border-pink-500 peer-checked:before:bg-pink-500"
-    >
-      <div
-        class="top-2/4 left-2/4 inline-block -translate-x-2/4 -translate-y-2/4 rounded-full p-5"
-        data-ripple-dark="true"
-      ></div>
-    </label>
-  </div>
-</div> */}
                                         </div>
                                     ))}
                                 </div>

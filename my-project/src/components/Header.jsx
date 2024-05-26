@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { FaCircleUser } from 'react-icons/fa6'
 import { IoNotifications } from 'react-icons/io5'
 import { IoMdSettings } from "react-icons/io";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion"
 import { MdOutlineKeyboardBackspace } from 'react-icons/md'
 
@@ -45,12 +45,12 @@ const Header = ({ data }) => {
                                 id="exampleSearch2"
                                 placeholder="Type query" />
                             <label
-                                for="exampleSearch2"
+                                htmlFor="exampleSearch2"
                                 className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-[#868e93] transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-ntext-[#b2b8bb]"
                             >Search</label>
                         </div>
                         <div className='flex items-center md:gap-8 gap-5'>
-                            <div className=' text-[#607d8b] slg:hidden ' onClick={SideBarShow}>
+                            <div className=' text-[#607d8b] slg:hidden cursor-pointer hover:scale-110 ' onClick={SideBarShow}>
                                 <LuMenu className='' size={20} />
                             </div>
                             <div className=' text-[#607d8b] slg:flex hidden items-center gap-2 ' onClick={handleNavigate}>
@@ -58,7 +58,9 @@ const Header = ({ data }) => {
                                 <p className='text-xs font-Roboto'>Sign In</p>
                             </div>
                             <div className=' text-[#607d8b] '>
-                                <IoNotifications className='' size={20} />
+                                <Link to="/notifications">
+                                    <IoNotifications className='' size={20} />
+                                </Link>
                             </div>
                             <div className=' text-[#607d8b] cursor-pointer '
                                 onClick={showSideNavbar}

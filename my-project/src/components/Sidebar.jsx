@@ -6,13 +6,13 @@ import { FaCircleUser } from 'react-icons/fa6';
 import { IoNotifications } from "react-icons/io5";
 import { Link, useLocation } from 'react-router-dom';
 import { LuMenu } from "react-icons/lu";
+import { CgCloseO } from "react-icons/cg";
+
 import { NavbarContext } from '../context/NavbarContext';
 
 
 const Sidebar = () => {
-  const { showSidebar } = useContext(NavbarContext)
-
-  console.log("kmlksflksflsndfl", showSidebar);
+  const { showSidebar, setShowSidebar } = useContext(NavbarContext)
 
   const location = useLocation();
   const [links, setLinks] = useState([
@@ -30,7 +30,10 @@ const Sidebar = () => {
     {
       showSidebar ? 
       <>
-      <div className='w-[288px] bg-[#ffffff] h-[calc(100vh-2rem)] rounded-xl border border-gray-300 '>
+      <div className='w-[288px] bg-[#ffffff] h-[calc(100vh-2rem)] rounded-xl border border-gray-300  relative'>
+        <div className='absolute top-4 right-4 sm:hidden block cursor-pointer hover:scale-110' onClick={()=>setShowSidebar(false)}>
+        <CgCloseO size={25} />
+        </div>
         <div className='p-4'>
           <h3 className='font-Roboto text-[#263238] font-medium text-center pt-2'>Material Tailwind React</h3>
 
@@ -40,6 +43,7 @@ const Sidebar = () => {
               <Link to={link.to} key={index}>
                 <div
                   className={`flex items-center gap-4 text-[#607d8b] relative group z-20 cursor-pointer ${location.pathname === link.to ? ' text-[#ffffff]' : ''}`}
+                  onClick={()=> setShowSidebar(false)}
                 >
                   {link.icon}
                   <p className='font-Roboto z-20 font-bold'>{link.text}</p>
@@ -53,7 +57,7 @@ const Sidebar = () => {
 
               <section className=' pt-6 flex flex-col gap-[30px] justify-center'>
                 <Link to="/">
-                  <div className='flex items-center gap-4 text-[#607d8b] relative group z-20 cursor-pointer'>
+                  <div className='flex items-center gap-4 text-[#607d8b] relative group z-20 cursor-pointer' onClick={()=> setShowSidebar(false)}>
                     <HiTableCells className='z-20' size={20} />
                     <p className='font-Roboto z-20 font-bold'>Sign In</p>
                     <div className='group-hover:bg-[#efefef] absolute h-[50px] w-[254px] -mx-4 z-10 rounded-lg'></div>

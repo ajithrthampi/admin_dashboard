@@ -58,7 +58,7 @@ const Tables = () => {
                                                 <tr key={name}>
                                                     <td className={className}>
                                                         <div className="flex items-center gap-4">
-                                                            <Avatar src={img} alt={name} size="" className='w-9 h-9' variant="rounded" />
+                                                            <Avatar src={img} alt={name}  className='w-9 h-9' variant="rounded" />
                                                             <div>
                                                                 <Typography
                                                                     variant="small"

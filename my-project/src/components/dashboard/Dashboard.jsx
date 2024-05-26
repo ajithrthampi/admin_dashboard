@@ -242,7 +242,7 @@ const Dashboard = () => {
                             color="transparent"
                             className="m-0 p-6"
                         >
-                            <Typography variant="h6" color="" className="mb-2 font-Roboto">
+                            <Typography variant="h6" className="mb-2 font-Roboto">
                                 Orders Overview
                             </Typography>
                             <Typography

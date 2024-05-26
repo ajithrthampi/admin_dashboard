@@ -76,17 +76,20 @@ export function SignUp() {
                     <div className="space-y-4 mt-8">
                         <div className='flex flex-col gap-5'>
                             <div className='w-full shadow-md bg-white h-12 rounded-md cursor-pointer hover:shadow-xl duration-75'>
-                                <a className="flex items-center font-Roboto uppercase justify-center w-full py-4 mb-6 text-sm font-medium transition duration-300 rounded-2xl text-grey-900 bg-grey-300 hover:bg-grey-400 focus:ring-4 focus:ring-grey-300">
-                                    <img className="h-4 mr-2" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/logos/logo-google.png" alt="" />
-                                    Sign in with Google
-                                </a>
+                                <Link to="/dashboard">
+                                    <a className="flex items-center font-Roboto uppercase justify-center w-full py-4 mb-6 text-sm font-medium transition duration-300 rounded-2xl text-grey-900 bg-grey-300 hover:bg-grey-400 focus:ring-4 focus:ring-grey-300">
+                                        <img className="h-4 mr-2" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/motion-tailwind/img/logos/logo-google.png" alt="" />
+                                        Sign in with Google
+                                    </a>
+                                </Link>
                             </div>
-
                             <div className='w-full shadow-md bg-white h-12 rounded-md cursor-pointer hover:shadow-xl duration-75'>
-                                <a className="flex gap-2 items-center font-Roboto uppercase justify-center w-full py-4 mb-6 text-sm font-medium transition duration-300 rounded-2xl text-grey-900 bg-grey-300 hover:bg-grey-400 focus:ring-4 focus:ring-grey-300">
-                                    <FaXTwitter size={18} />
-                                    Sign in with Twitter
-                                </a>
+                                <Link to="/dashboard">
+                                    <a className="flex gap-2 items-center font-Roboto uppercase justify-center w-full py-4 mb-6 text-sm font-medium transition duration-300 rounded-2xl text-grey-900 bg-grey-300 hover:bg-grey-400 focus:ring-4 focus:ring-grey-300">
+                                        <FaXTwitter size={18} />
+                                        Sign in with Twitter
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
