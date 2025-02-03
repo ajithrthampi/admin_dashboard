@@ -1,13 +1,12 @@
-import React from 'react'
 import Image from "next/image";
+import profile from "../../../../public/images/profile.png";
 import shape1 from "../../../../public/images/shape1.png";
 import shape2 from "../../../../public/images/shape2.png";
 import shape4 from "../../../../public/images/shape4.png";
 import shape5 from "../../../../public/images/shape5.png";
 import shape6 from "../../../../public/images/shape6.png";
 import shape7 from "../../../../public/images/shape7.png";
-import profile from "../../../../public/images/profile.png";
-import "../hero/hero.css"
+import "../hero/hero.css";
 
 const HeroSection = () => {
     return (
